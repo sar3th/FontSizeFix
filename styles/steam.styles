@@ -4228,7 +4228,7 @@ steam.styles
 		textcolor="text"
 		selectedtextcolor="TextentrySelected"	
 		SelectedBgColor="focus"
-		font-size=16
+		font-size=14
 	}
 	
 	friends_chat_text_self
@@ -4236,7 +4236,7 @@ steam.styles
 		textcolor="ChatOwnTextColor"
 		selectedtextcolor="TextentrySelected"	
 		selectedbgcolor="focus"
-		font-size=16
+		font-size=14
 	}
 
 	friends_chat_history
@@ -4244,13 +4244,13 @@ steam.styles
 		textcolor="ChatDialog.HistoryColor"
 		selectedtextcolor="TextentrySelected"	
 		selectedbgcolor="focus"
-		font-size=16
+		font-size=14
 	}
 	
 	friends_chat_event
 	{
 		textcolor="Text"
-		font-size=16
+		font-size=14
 		selectedtextcolor="TextentrySelected"
 		selectedbgcolor="focus"
 	}
@@ -4259,7 +4259,7 @@ steam.styles
 	{
 		textcolor="text"
 		selectedtextcolor="TextentrySelected"
-		font-size=16
+		font-size=14
 		font-weight=1000
 	}
 
@@ -4268,7 +4268,7 @@ steam.styles
 		textcolor="text"
    		SelectedBgColor="focus"
 		font-style=underline
-		font-size=16
+		font-size=14
 		selectedtextcolor="TextentrySelected"
 		selectedbgcolor="focus"
 	}
@@ -4278,7 +4278,7 @@ steam.styles
 		textcolor="Friends.InGameColor"
 		selectedtextcolor="TextentrySelected"	
 		selectedbgcolor="focus"
-		font-size=16
+		font-size=14
 
 	}
 	
@@ -4287,7 +4287,7 @@ steam.styles
 		textcolor="Friends.OnlineColor"
 		selectedtextcolor="TextentrySelected"	
 		selectedbgcolor="focus"
-		font-size=16
+		font-size=14
 	}
 	
 	friends_chat_name
@@ -4295,7 +4295,7 @@ steam.styles
 		textcolor="Friends.OnlineColor"
 		selectedtextcolor="TextentrySelected"	
 		selectedbgcolor="focus"
-		font-size=16
+		font-size=14
 	}
 	
 	friends_chat_accountid
@@ -4303,7 +4303,7 @@ steam.styles
 		selectedtextcolor="TextentrySelected"	
 		selectedbgcolor="focus"
 		textcolor="text"
-		font-size=16
+		font-size=14
 	}
 	
 	friends_chat_securitylink
@@ -4311,7 +4311,7 @@ steam.styles
 		textcolor="text"
 		bgcolor="none"
 		font-family=basefont
-		font-size=16
+		font-size=14
 		font-weight=400
 		font-style=underline
 		selectedtextcolor="TextSelected"	
