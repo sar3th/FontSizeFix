@@ -113,7 +113,7 @@
 			
 			}     
 
-			font-size=16
+			font-size=14
 		}
 
 		CEmoticonButton

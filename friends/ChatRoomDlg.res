@@ -108,7 +108,7 @@
 				18="fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
 				
 			}
-			font-size=16
+			font-size=14
 		}	
 		
 		CChatActionsButton
