@@ -66,7 +66,8 @@ steam.styles
     TextGlowSelected="169 169 169 255"
     TextGlowHoverSm="123 123 123 255"
     TextGlowSelectedSm="142 142 142 255"
-    
+    redborder="169 72 71 255"
+
     NavLabel="153 153 153 255"
     Label="168 168 168 255"
     Label2="111 111 111 255"
@@ -89,6 +90,7 @@ steam.styles
     TitleBarFocus="14 31 56 80"
     MenuBG="68 68 68 255"
     
+    Focus0="23 51 77 255" // used in window frame borders 
     Focus="25 55 84 255" // background color of any selected menu or list item
     Focus2="21 70 107 255" 	// background color of view buttons and anything else in focus that needs more 'punch'
     Focus3="82 82 82 255" 	// background color of highlighted friends 
@@ -178,7 +180,10 @@ steam.styles
 		parental_lock_inactive4 "146 72 71 255"
 		parental_lock_inactive5 "103 48 47 255"	
 		red6="38 1 1 255"
-		
+
+		support_lock_ack1 "187 157 47 255"
+		support_lock_ack2 "193 166 67 255"
+
     // colors pulled from steamscheme.res
     "ClayBG"      "70 70 70 255"
     "ClayButtonBG"      "85 85 85 255"        
@@ -809,8 +814,8 @@ steam.styles
       {
         0="gradient_horizontal( x0, y1 - 1, x1 + 1, y1, ClientBG, focus )"     
         1="gradient( x1 - 1, y0, x1, y1, ClientBG, focus )" 
-        2="fill( x0, y0, x1, y0 + 1, ClientBG )"
-        3="fill( x0, y0, x0 + 1, y1, ClientBG )"
+        2="gradient_horizontal( x0, y0, x1, y0 + 1, focus0, ClientBG )"
+        3="gradient( x0, y0, x0 + 1, y1, focus0, ClientBG )"
       }
     } 
     
@@ -821,8 +826,8 @@ steam.styles
       {
         0="gradient_horizontal( x0, y1 - 1, x1 + 1, y1, ClientBG, focus2 )"     
         1="gradient( x1 - 1, y0, x1, y1, ClientBG, focus2 )" 
-        2="fill( x0, y0, x1, y0 + 1, ClientBG )"
-        3="fill( x0, y0, x0 + 1, y1, ClientBG )"
+        2="gradient_horizontal( x0, y0, x1, y0 + 1, focus, ClientBG )"
+        3="gradient( x0, y0, x0 + 1, y1, focus, ClientBG )"
       }
     } 
     
@@ -1051,7 +1056,6 @@ steam.styles
     {
 		textcolor=Highlight5
 		bgcolor=none
-		inset="0 -3 0 0"
 		render_bg { }
     }
     
@@ -1151,9 +1155,21 @@ steam.styles
     {
       textcolor="text"
       selectedtextcolor="white"
-      }
+    }
       
     "GameItem_Installed:hover"
+    {
+      textcolor="white"
+      selectedtextcolor="white"
+    }
+    
+    "GameItem_Running"
+    {
+      textcolor="Friends.InGameColor"
+      selectedtextcolor="white"
+    }
+    
+    "GameItem_Running:hover"
     {
       textcolor="white"
       selectedtextcolor="white"
@@ -2868,6 +2884,8 @@ steam.styles
     {
       font-family="Lucida Console"
       font-size=9
+      font-family="DejaVu Sans Mono" [$LINUX]
+      font-size=12 [$LINUX]
       font-family="Menlo" [$OSX]
       font-size=14 [$OSX]
       textcolor="label"
@@ -2985,7 +3003,63 @@ steam.styles
       render_bg={}
       image="graphics/icon_controller_bpm_disabled"
     }
+    
+    VRButton
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_vr"
+    }  
 
+    VRButton:hover
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_vr_over"
+    }
+	
+    VRButton:active
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_vr_down"
+    }
+	
+    VRButton:disabled
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_vr_disabled"
+    }
+    
+    VRButtonExit
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_vr_happy"
+    }  
+
+    VRButtonExit:hover
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_vr_happy_over"
+    }
+	
+    VRButtonExit:active
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_vr_happy_down"
+    }
+	
+    VRButtonExit:disabled
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_vr_disabled"
+    }
+    
     ForwardButton
     {
       bgcolor=none
@@ -3193,6 +3267,8 @@ steam.styles
 	{
 		textcolor="Highlight3"
 		font-size=14
+		font-family="DejaVu Sans Mono" [$LINUX]
+		font-size=12 [$LINUX]
 		font-family="Menlo" [$OSX]
       	font-size=16 [$OSX]
 		selectedtextcolor="TextSelected"
@@ -3201,11 +3277,13 @@ steam.styles
 	
 	console_text
 	{
- 		font-family="Lucida Console"
+		font-family="Lucida Console"
 		font-size=9
+		font-family="DejaVu Sans Mono" [$LINUX]
+		font-size=12 [$LINUX]
 		font-family="Menlo" [$OSX]
-      	font-size=14 [$OSX]
-	    textcolor="text"
+		font-size=14 [$OSX]
+		textcolor="text"
 		selectedtextcolor="TextSelected"	
 		selectedbgcolor="Focus"
 	}
